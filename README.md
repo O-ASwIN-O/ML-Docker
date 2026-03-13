@@ -93,36 +93,14 @@ Access at: http://localhost:5000 (MLflow UI, not the API)
      -d '{"features":[5.1,3.5,1.4,0.2]}'
    ```
 
-## 📡 API Documentation
+## 🌐 Web Interface
 
-### Endpoint: `POST /predict`
+Visit the root URL to access a dark-themed web form for easy predictions:
 
-**Request Body:**
-```json
-{
-  "features": [float, float, float, float]
-}
-```
+- **Local:** http://localhost:5000
+- **Railway:** https://ml-docker-production.up.railway.app
 
-**Response:**
-```json
-{
-  "prediction": 0
-}
-```
-
-**Iris Classes:**
-- 0: Setosa
-- 1: Versicolor
-- 2: Virginica
-
-**Example:**
-```bash
-curl -X POST http://localhost:5000/predict \
-  -H "Content-Type: application/json" \
-  -d '{"features":[5.1,3.5,1.4,0.2]}'
-# Returns: {"prediction": 0}
-```
+The form accepts sepal and petal measurements and displays the predicted Iris class.
 
 ## 🏗️ Project Structure
 
